@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sentra – Community Hirer Management for Schools</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --sentra-green: #36a569;
+        --sentra-teal: #0b7285;
+        --sentra-dark: #22303f;
+        --sentra-light: #f3f4f6;
+        --sentra-white: #ffffff;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        color: var(--sentra-dark);
+        background: var(--sentra-white);
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--sentra-white);
+        border-bottom: 1px solid var(--sentra-light);
+      }
+
+      header img.logo {
+        height: 42px;
+      }
+
+      nav a {
+        margin-left: 1.5rem;
+        text-decoration: none;
+        color: var(--sentra-dark);
+        font-weight: 600;
+      }
+
+      .hero {
+        padding: 6rem 2rem;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1.2rem;
+        font-weight: 700;
+        color: var(--sentra-dark);
+      }
+
+      .hero p {
+        font-size: 1.25rem;
+        max-width: 650px;
+        margin: 0 auto 2rem;
+        color: #374957;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 0.9rem 1.6rem;
+        font-size: 1.1rem;
+        background: var(--sentra-green);
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      section {
+        padding: 4rem 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.8rem;
+        margin-top: 2rem;
+      }
+
+      .feature {
+        padding: 1.5rem;
+        background: var(--sentra-light);
+        border-radius: 12px;
+      }
+
+      footer {
+        margin-top: 4rem;
+        padding: 2rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #46515c;
+        border-top: 1px solid var(--sentra-light);
+      }
+
+      @media (max-width: 600px) {
+        .hero h1 {
+          font-size: 2.1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <!-- Replace this when you upload your logo -->
+      <img class="logo" src="logo.png" alt="Sentra logo" />
+      <nav>
+        <a href="#why">Why Sentra</a>
+        <a href="#pilot">Pilot Program</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Make school spaces work for the community</h1>
+      <p>
+        Sentra reduces admin workload for busy school teams by managing
+        community hirers, setting clear expectations, and handling behaviour
+        issues before they reach the school.
+      </p>
+      <a class="cta-button" href="#contact">Join the pilot program</a>
+    </section>
+
+    <section id="why">
+      <h2>Why Schools Use Sentra</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Reduced admin workload</h3>
+          <p>
+            We onboard hirers, manage expectations, and communicate on your
+            behalf.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Better behaviour management</h3>
+          <p>
+            Sentra acts as first point of contact, ensuring fewer after-hours
+            escalations.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Clear, enforceable expectations</h3>
+          <p>
+            Standardised conduct guidelines that support both schools and
+            community users.
+          </p>
+        </div>
+
+        <div class="feature">
+          <h3>Works with your existing booking system</h3>
+          <p>
+            No migration, no new tools. Sentra overlays what you already use.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pilot">
+      <h2>Pilot Program (No Cost)</h2>
+      <p>
+        Sentra is inviting selected Western Australian schools to join a free
+        pilot. We onboard your hirers, customise expectations, and handle
+        communications.
+      </p>
+      <p>
+        The pilot is designed to be lightweight, high-value, and easy to exit or
+        extend.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in joining the pilot, or want to learn more?</p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:hello@sentra.yourdomain">hello@sentra.yourdomain</a>
+      </p>
+      <p><strong>Founder:</strong> Trent Jones</p>
+    </section>
+
+    <footer>
+      ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      Sentra. All rights reserved.
+    </footer>
+  </body>
+</html>
